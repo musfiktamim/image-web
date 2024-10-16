@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.containerofSearch{
+    height: 70vh;
+    width: 100%;
+    background-image: url("./image/jeremy-oberson-KAy0-OVr9A8-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    row-gap: 10px;
+}
+
+.inputBox{
+    width: 60%;
+    height: 50px;
+    border-radius: 2rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border: 0.4px solid black;
+    overflow: hidden;
+}
+
+.containerofSearch h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800;
+}
+
+.inputBox input{
+    width: 94%;
+    height: 100%;
+    border-left: 2rem;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.inputBox button{
+    width: 6%;
+    height: 100%;
+    border-radius: 50%;
+    border: none;
+    background-color: #759DFE;
+}
+
+.image-gallary{
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.images{
+    columns: 5 340px;
+    max-width: 95%;
+    list-style: none;
+}
+
+.image img{
+    height: 100%;
+    width: 100%;
+}
+
+.image{
+    position: relative;
+    overflow: hidden;
+    margin: 3px 1px 3px 1px;
+}
+
+.image:hover .detailes{
+    bottom: 0%;
+}
+
+.detailes{
+    position: absolute;
+    bottom: -100%;
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(to top, black,transparent);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px 0 10px;
+    transition: all 0.5s;
+}
+
+.detailes .downloads,.camera{
+    border: none;
+    background-color: #255cdd;
+    padding: 3px;
+    border-radius: 0.3rem;
+}
+
+.camera{
+    background-color: transparent;
+}
+.nameimage{
+    display: flex;
+    align-items: center;
+    row-gap: 5px;
+    color: white;
+    font-size: 1.3rem;
+}
